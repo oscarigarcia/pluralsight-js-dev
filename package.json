@@ -1,0 +1,20 @@
+{
+  "name": "pluralsight-js-dev",
+  "version": "1.0.0",
+  "description": "JavaScript Development Environment from Pluralsight",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscary25/pluralsight-js-dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscary25/pluralsight-js-dev/issues"
+  },
+  "homepage": "https://github.com/oscary25/pluralsight-js-dev#readme"
+}
