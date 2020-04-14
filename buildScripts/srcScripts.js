@@ -15,7 +15,7 @@ app.use(
   })
 );
 
-app.get("/users", function (req, res) {
+app.get("users", function (req, res) {
   // TODO:This is my End-point AND you have to Replace for the data with the database
   res.json([{ id: 1, firstName: "Oscary", lastName: "García" }]);
 });

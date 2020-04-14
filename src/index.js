@@ -1,5 +1,5 @@
 import "./index.css";
-import { getUser } from "./api/userApi";
+import { getUser, deleteUser } from "./api/userApi";
 
 getUser().then((result) => {
   let userBody = "";
@@ -14,6 +14,18 @@ getUser().then((result) => {
   });
 
   global.document.getElementById("users").innerHTML = userBody;
+
+  const deleteLinks = global.document.getElementsByClassName("deleteUser");
+
+  Array.from(deleteLinks, (link) => {
+    link.onClick = function (event) {
+      const element = event.target;
+      event.preventDefault();
+      deleteUser(element.attributes["data-id"].value);
+      const row = element.parentNode.parentNode;
+      row.parentNode.removeChild(row);
+    };
+  });
 });
 
 // const courseValue = numeral(1000).format("$0,0.00");
