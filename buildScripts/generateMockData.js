@@ -9,6 +9,7 @@ jsf.resolve(schema).then(function (result) {
     JSON.stringify(result, null, 2),
     function (err) {
       if (err) {
+        // eslint-disable-next-line no-console
         return console.log(chalk.red(err));
       } else {
         // eslint-disable-next-line no-console
